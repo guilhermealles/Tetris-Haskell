@@ -14,6 +14,13 @@
   (major1) == 1 && (major2) <  10 || \
   (major1) == 1 && (major2) == 10 && (minor) <= 1)
 
+/* package time-1.5.0.1 */
+#define VERSION_time "1.5.0.1"
+#define MIN_VERSION_time(major1,major2,minor) (\
+  (major1) <  1 || \
+  (major1) == 1 && (major2) <  5 || \
+  (major1) == 1 && (major2) == 5 && (minor) <= 0)
+
 /* tool gcc-4.2.1 */
 #define TOOL_VERSION_gcc "4.2.1"
 #define MIN_TOOL_VERSION_gcc(major1,major2,minor) (\
@@ -63,5 +70,5 @@
   (major1) == 0 && (major2) <  29 || \
   (major1) == 0 && (major2) == 29 && (minor) <= 0)
 
-#define CURRENT_PACKAGE_KEY "Tetri_5nCJRgivdA90Lp8hBcyPtQ"
+#define CURRENT_PACKAGE_KEY "Tetri_KVO1s2vVxiD6v6GeGIamtr"
 

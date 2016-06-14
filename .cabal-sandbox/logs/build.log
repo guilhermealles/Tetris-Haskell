@@ -153,3 +153,23 @@ dependencies: integer-gmp-1.0.0.0 ghc-prim-0.4.0.0 deepseq-1.4.1.1
 install-outcome: InstallOk
 docs-outcome: NotTried
 tests-outcome: NotTried
+
+package: random-1.1
+os: osx
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.8.0
+dependencies: time-1.6.0.1 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried
+
+package: time-1.6.0.1
+os: osx
+arch: x86_64
+compiler: ghc-7.10.3
+client: cabal-install-1.22.8.0
+dependencies: deepseq-1.4.1.1 base-4.8.2.0
+install-outcome: InstallOk
+docs-outcome: NotTried
+tests-outcome: NotTried

@@ -17,7 +17,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/bin"
-libdir     = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/Tetris-Haskell-0.1.0.0-5nCJRgivdA90Lp8hBcyPtQ"
+libdir     = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/Tetris-Haskell-0.1.0.0-KVO1s2vVxiD6v6GeGIamtr"
 datadir    = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/share/x86_64-osx-ghc-7.10.3/Tetris-Haskell-0.1.0.0"
 libexecdir = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/libexec"
 sysconfdir = "/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/etc"

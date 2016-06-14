@@ -57,7 +57,7 @@ executable Tetris-Haskell
   -- other-extensions:    
   
   -- Other library packages from which modules are imported.
-  build-depends:       base >=4.8 && <4.9, gloss
+  build-depends:       base >=4.8 && <4.9, gloss, time
   
   -- Directories containing source files.
   -- hs-source-dirs:      

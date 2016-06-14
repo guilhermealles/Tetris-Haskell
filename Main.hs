@@ -2,6 +2,7 @@ module Main(main) where
 
 import Graphics.Gloss
 import Graphics.Gloss.Data.ViewPort
+import Data.Time.Clock
 
 width, height, offset, fps :: Int
 width = 300     -- 30 * 10
@@ -123,9 +124,47 @@ sampleState = State {
                 lBlock { blockGridPosition = (2,3) },
                 jBlock { blockGridPosition = (3,5) } ],
     movingBlock = oBlock { blockGridPosition = (5,22) },
-    nextBlock = oBlock
-
+    nextBlock = sBlock
 }
+
+-- | The initial state
+initialState :: GameState
+initialState = State {
+    blocks = [ ],
+    movingBlock = oBlock { blockGridPosition = (5,22) },
+    nextBlock = (getRandomTetrisBlock sampleState)
+}
+
+-- | Get a pseudorandom number. For simplicity, this number is based on the number of picoseconds passed
+-- from midnight.
+getRandomNumber :: GameState -> Int -> Int
+getRandomNumber state maxrange =  fromIntegral ((length (blocks state)) ^ 2.73 ^ 3.1415) `mod` maxrange
+    where
+        diffTimeToSeconds  :: DiffTime -> Int
+        diffTimeToSeconds = floor . toRational
+
+        integralTime :: (Integral a) => IO a
+        integralTime = getCurrentTime >>= return.floor.utctDayTime
+
+-- | Get a random tetris block
+getRandomTetrisBlock :: GameState -> TetrisBlock
+getRandomTetrisBlock state = 
+    if randomNumber == 0 then
+        iBlock
+    else if randomNumber == 1 then
+        lBlock
+    else if randomNumber == 2 then
+        jBlock
+    else if randomNumber == 3 then
+        oBlock
+    else if randomNumber == 4 then
+        sBlock
+    else if randomNumber == 5 then
+        zBlock
+    else
+        tBlock
+    where
+        randomNumber = getRandomNumber state 7
 
 -- The I block
 iBlock :: TetrisBlock

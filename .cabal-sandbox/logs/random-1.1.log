@@ -128,7 +128,7 @@ System/Random.hs:527:1: Warning: Tab character
 System/Random.hs:528:1: Warning: Tab character
 In-place registering random-1.1...
 Creating package registration file:
-/var/folders/nk/cs685wls1hj2xj304t86ypv80000gn/T/pkgConf-random-1585640194937186357.1
+/var/folders/nk/cs685wls1hj2xj304t86ypv80000gn/T/pkgConf-random-1823378840143542612.1
 Installing library in
-/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/random-1.1-9Kgekc9yEaLHLNUuw6paWL
+/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/random-1.1-2u68R5uk3SRCXsdePPQ9vt
 Registering random-1.1...

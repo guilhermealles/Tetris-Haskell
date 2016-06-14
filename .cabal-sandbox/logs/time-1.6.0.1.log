@@ -1,0 +1,72 @@
+Configuring time-1.6.0.1...
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking how to run the C preprocessor... gcc -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking for gmtime_r... yes
+checking for localtime_r... yes
+checking for clock_gettime... no
+checking whether struct tm is in sys/time.h or time.h... time.h
+checking for struct tm.tm_zone... yes
+checking whether time.h and sys/time.h may both be included... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking whether altzone is declared... no
+configure: creating ./config.status
+config.status: creating lib/include/HsTimeConfig.h
+Building time-1.6.0.1...
+Preprocessing library time-1.6.0.1...
+[ 1 of 26] Compiling Data.Time.Clock.CTimespec ( dist/dist-sandbox-f694767d/build/Data/Time/Clock/CTimespec.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/CTimespec.o )
+[ 2 of 26] Compiling Data.Time.Clock.CTimeval ( lib/Data/Time/Clock/CTimeval.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/CTimeval.o )
+[ 3 of 26] Compiling Data.Time.Clock.Scale ( lib/Data/Time/Clock/Scale.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/Scale.o )
+[ 4 of 26] Compiling Data.Time.Calendar.Private ( lib/Data/Time/Calendar/Private.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/Private.o )
+[ 5 of 26] Compiling Data.Time.Calendar.MonthDay ( lib/Data/Time/Calendar/MonthDay.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/MonthDay.o )
+[ 6 of 26] Compiling Data.Time.Calendar.Days ( lib/Data/Time/Calendar/Days.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/Days.o )
+[ 7 of 26] Compiling Data.Time.Calendar.OrdinalDate ( lib/Data/Time/Calendar/OrdinalDate.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/OrdinalDate.o )
+[ 8 of 26] Compiling Data.Time.Calendar.Gregorian ( lib/Data/Time/Calendar/Gregorian.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/Gregorian.o )
+[ 9 of 26] Compiling Data.Time.Calendar.WeekDate ( lib/Data/Time/Calendar/WeekDate.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/WeekDate.o )
+[10 of 26] Compiling Data.Time.Calendar.JulianYearDay ( lib/Data/Time/Calendar/JulianYearDay.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/JulianYearDay.o )
+[11 of 26] Compiling Data.Time.Calendar.Julian ( lib/Data/Time/Calendar/Julian.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/Julian.o )
+[12 of 26] Compiling Data.Time.Clock.UTC ( lib/Data/Time/Clock/UTC.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/UTC.o )
+[13 of 26] Compiling Data.Time.Clock.POSIX ( lib/Data/Time/Clock/POSIX.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/POSIX.o )
+[14 of 26] Compiling Data.Time.Clock.UTCDiff ( lib/Data/Time/Clock/UTCDiff.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/UTCDiff.o )
+[15 of 26] Compiling Data.Time.LocalTime.TimeZone ( lib/Data/Time/LocalTime/TimeZone.hs, dist/dist-sandbox-f694767d/build/Data/Time/LocalTime/TimeZone.o )
+[16 of 26] Compiling Data.Time.LocalTime.TimeOfDay ( lib/Data/Time/LocalTime/TimeOfDay.hs, dist/dist-sandbox-f694767d/build/Data/Time/LocalTime/TimeOfDay.o )
+[17 of 26] Compiling Data.Time.Format.Locale ( lib/Data/Time/Format/Locale.hs, dist/dist-sandbox-f694767d/build/Data/Time/Format/Locale.o )
+[18 of 26] Compiling Data.Time.LocalTime.LocalTime ( lib/Data/Time/LocalTime/LocalTime.hs, dist/dist-sandbox-f694767d/build/Data/Time/LocalTime/LocalTime.o )
+[19 of 26] Compiling Data.Time.Format.Parse ( lib/Data/Time/Format/Parse.hs, dist/dist-sandbox-f694767d/build/Data/Time/Format/Parse.o )
+[20 of 26] Compiling Data.Time.Format ( lib/Data/Time/Format.hs, dist/dist-sandbox-f694767d/build/Data/Time/Format.o )
+[21 of 26] Compiling Data.Time.LocalTime ( lib/Data/Time/LocalTime.hs, dist/dist-sandbox-f694767d/build/Data/Time/LocalTime.o )
+[22 of 26] Compiling Data.Time.Clock  ( lib/Data/Time/Clock.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock.o )
+[23 of 26] Compiling Data.Time.Clock.TAI ( lib/Data/Time/Clock/TAI.hs, dist/dist-sandbox-f694767d/build/Data/Time/Clock/TAI.o )
+[24 of 26] Compiling Data.Time.Calendar ( lib/Data/Time/Calendar.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar.o )
+[25 of 26] Compiling Data.Time        ( lib/Data/Time.hs, dist/dist-sandbox-f694767d/build/Data/Time.o )
+[26 of 26] Compiling Data.Time.Calendar.Easter ( lib/Data/Time/Calendar/Easter.hs, dist/dist-sandbox-f694767d/build/Data/Time/Calendar/Easter.o )
+In-place registering time-1.6.0.1...
+Creating package registration file:
+/var/folders/nk/cs685wls1hj2xj304t86ypv80000gn/T/pkgConf-time-1.6.0178448449274243042.1
+Installing library in
+/Users/Alles/Workspace/Tetris-Haskell/.cabal-sandbox/lib/x86_64-osx-ghc-7.10.3/time-1.6.0.1-1tUpDH9MiWU6xzEucm3TkN
+Registering time-1.6.0.1...
