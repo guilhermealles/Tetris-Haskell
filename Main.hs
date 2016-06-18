@@ -48,7 +48,7 @@ stepGameState seconds currentState =
         if possibleToMove (movingBlock currentState) currentState then 
             moveMovingBlockDown currentState
         else
-            applyGravity (removeCompleteRows (currentState {    blocks = (movingBlock currentState):(blocks currentState), 
+            applyGravity (removeCompleteRows (currentState {    blocks = filter (\x -> (length $ squareUnitPositions x) > 0) ((movingBlock currentState):(blocks currentState)), 
                                                                 movingBlock = (nextBlock currentState),
                                                                 nextBlock = (getRandomBlock currentState) }))
 
